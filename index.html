@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Pokémon</title>
+    <style>
+    html {
+        height:100%;
+        width:100%;
+    }
+    body{
+        background:#8ba987 url('img/Campo_de_batalla.png') no-repeat center center;
+        background-size:100% 100%;
+    }
+    </style>
+    
+    <script type="text/javascript" src="pokemon.js"></script>
+  </head>
+  <body>
+      <h1 style="text-align: center; font-family: 'Arial bold', normal; font-size: 45px">Yo elijo mi Pokémon!!!</h1>           
+      <table style="font-family: 'Arial', normal; font-size: 55px" align="center">
+          <thead>
+              <tr>
+                  <th colspan="2">
+                      <span id="nombrePokemon" style="text-align: center; font-family: 'Arial bold', normal; font-size: 84px">Nombre pokemon</span>
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th rowspan="3">
+                      <img id="poquebola" src="img/poquebola.png" width="250" height="200"> 
+                      <img id="imagenPokemon" src="" width="150" height="150">
+                  </th>
+              </tr>
+              <tr>
+                  <th><b>Vida: </b><span id="vidaPokemon" style="color:red"></span></th>
+              </tr>
+              <tr>
+                  <th><b>Ataque: </b><span id="ataquePokemon" style="color:red"></span></th>
+              </tr>
+              <tr>
+                  <th colspan="2"><span id="gritoPokemon" style="text-align: center; font-family: 'Arial bold', normal; font-size: 74px"></span></th>
+              </tr>
+               <tr>
+                  <th colspan="2"><span id="errorPokemon" style="text-align: center; font-family: 'Arial bold', italic; font-size: 94px; color:red"></span></th>
+              </tr>
+          </tbody>
+      </table>
+      
+      <script type="text/javascript">lanzoPokemon();</script>
+      <script type="text/javascript">error();</script>
+  </body>
+</html>
